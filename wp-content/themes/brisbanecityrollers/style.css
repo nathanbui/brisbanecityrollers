@@ -468,7 +468,7 @@ body.home .site-header {
     margin-bottom: 0;
 }
 
-.home-banner {
+.panel-home-banner {
     position: relative;
     background: url(images/skates.jpg) no-repeat;
     background-size: cover;
@@ -477,7 +477,7 @@ body.home .site-header {
     padding-top: 35%;
 }
 
-.home-banner::before {
+.panel-home-banner::before {
     content: "";
     display: block;
     background-color: rgba(0, 0, 0, 0.2);
@@ -488,7 +488,7 @@ body.home .site-header {
     height: 100%;
 }
 
-.home-banner h2 {
+.panel-home-banner h2 {
     font-size: 50px;
     position: absolute;
     z-index: 2;
@@ -501,15 +501,15 @@ body.home .site-header {
     text-shadow: 2px 2px 3px rgba(0,0,0,0.4);
 }
 
-.home-intro {
+.panel-home-intro {
     padding-top: 40px;
 }
 
-.home-intro h1 {
+.panel-home-intro h1 {
     text-align: center;
 }
 
-.home-join {
+.panel-home-join {
     padding: 30px 0 70px 0;
 }
 
@@ -559,7 +559,7 @@ body.home .site-header {
     margin-bottom: 0;
 }
 
-.insta-feed .scartel {
+.panel-instagram-feed .scartel {
     margin-top: 50px;
 }
 
@@ -572,12 +572,12 @@ body #sb_instagram .sb_instagram_header a {
 }
 
 @media (max-width: 1199px) {
-    .home-banner h2 {
+    .panel-home-banner h2 {
         font-size: 38px;
     }
 }
 @media (max-width: 991px) {
-    .home-join {
+    .panel-home-join {
         padding-bottom: 30px;
     }
     .features-tiles .text-bottom h3 { 
@@ -589,7 +589,7 @@ body #sb_instagram .sb_instagram_header a {
 }
 
 @media (max-width: 767px) {
-    .home-banner {
+    .panel-home-banner {
         padding-top: 58%;
     }
     body.home h2 {
@@ -604,58 +604,58 @@ body #sb_instagram .sb_instagram_header a {
 }
 
 /* Contact Us */
-.page-contact-us h3 {
+.panel-contact-us-page h3 {
     font-size: 22px;
     font-family: 'Open Sans';
     text-transform: none;
 }
 
-.page-contact-us .col-details {
+.panel-contact-us-page .col-details {
     padding-right: 30px;
 }
-.page-contact-us .details-inner {
+.panel-contact-us-page .details-inner {
     background: #e8e8e8;
     padding: 20px 20px 4px 20px;
 }
 
-.page-contact-us .col-details p {
+.panel-contact-us-page .col-details p {
     font-size: 16px;
 }
 
-.page-contact-us .contact-form {
+.panel-contact-us-page .contact-form {
     margin-top: 20px;
 }
 
-.page-contact-us .col-details p span { 
+.panel-contact-us-page .col-details p span { 
     display: inline-block;
 }
 
-.page-contact-us .col-details p .initial { 
+.panel-contact-us-page .col-details p .initial { 
     font-weight: bold;
     color: #ef4136;
     width: 20px;
     vertical-align: top;
 }
 
-.page-contact-us .col-details p {
+.panel-contact-us-page .col-details p {
     margin-bottom: 15px;
 }
-.page-contact-us .col-details p .text {
+.panel-contact-us-page .col-details p .text {
     overflow: hidden;
 }
 
-.page-contact-us .col-details i {
+.panel-contact-us-page .col-details i {
     width: 20px;
 }
 
 @media (max-width: 767px) {
-    .page-contact-us .col-details { padding-right: 15px; margin-bottom: 15px; }
+    .panel-contact-us-page .col-details { padding-right: 15px; margin-bottom: 15px; }
 }
 @media (max-width: 440px) {
-    .page-contact-us .col-details p { font-size: 14px; }   
+    .panel-contact-us-page .col-details p { font-size: 14px; }   
 }
 @media (max-width: 340px) {
-    .page-contact-us .details-inner {
+    .panel-contact-us-page .details-inner {
         background: none;
         padding: 0;
     }
