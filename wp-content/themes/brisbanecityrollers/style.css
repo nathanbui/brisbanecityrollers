@@ -603,6 +603,12 @@ body #sb_instagram .sb_instagram_header a {
     }
 }
 
+/* panel - hr */
+.panel-horizontal-rule hr { margin: 0; }
+
+/* panel - member story */
+.panel-member-story { padding: 50px 0 40px 0; }
+
 /* Contact Us */
 .panel-contact-us-page h3 {
     font-size: 22px;

@@ -64,6 +64,39 @@ get_header();
 		        		</div>
 		        	</div>
 
+            	<?php } elseif ( get_row_layout() == 'horizontal_rule' ) { ?>
+            		<?php 
+            			$panel_class = get_sub_field('panel_class');
+            		?>
+    	        	<div class="panel-horizontal-rule panel-class-<?php echo $panel_class; ?>">
+    	        		<div class="container">
+    	        			<hr>
+    	        		</div>
+    	        	</div>
+
+	        	<?php } elseif ( get_row_layout() == 'member_story' ) { ?>
+	        		<?php 
+	        			$description = get_sub_field('description');
+	        			$image = get_sub_field('image');
+	        			$panel_class = get_sub_field('panel_class');
+	        		?>
+		        	<div class="panel-member-story panel-class-<?php echo $panel_class; ?>">
+		        		<div class="container">
+		        			<div class="row">
+		        				<div class="col-md-6 col-text">
+		        					<div class="inner">
+		        						<?php echo $description; ?>
+		        					</div>
+		        				</div>
+		        				<div class="col-md-6 col-image">
+		        					<div class="inner">
+		        						<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+		        					</div>
+		        				</div>
+		        			</div>
+		        		</div>
+		        	</div>
+
 	        	<?php } elseif ( get_row_layout() == 'home_join' ) { ?>
 	        		<?php 
 	        			$title = get_sub_field('title');
