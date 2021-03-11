@@ -609,6 +609,16 @@ body #sb_instagram .sb_instagram_header a {
 /* panel - member story */
 .panel-member-story { padding: 50px 0 40px 0; }
 
+/* panel - upcoming events */
+.panel-upcoming-events p { font-size: 16px; }
+.panel-upcoming-events p.facebook-link, 
+.panel-upcoming-events p.date, 
+.panel-upcoming-events p.location, 
+.panel-upcoming-events p.price { margin-bottom: 10px; }
+.panel-upcoming-events p i { width: 30px; }
+.panel-upcoming-events .description { margin-top: 25px; }
+.panel-upcoming-events .item .inner { max-width: 600px; margin-left: auto; margin-right: auto; }
+
 /* Contact Us */
 .panel-contact-us-page h3 {
     font-size: 22px;

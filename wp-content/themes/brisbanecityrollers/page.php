@@ -74,6 +74,63 @@ get_header();
     	        		</div>
     	        	</div>
 
+    	        <?php } elseif ( get_row_layout() == 'upcoming_events' ) { ?>
+            		<?php 
+            			$title = get_sub_field('title');
+            			$events = get_sub_field('events');
+            			$panel_class = get_sub_field('panel_class');
+            		?>
+    	        	<div class="panel-upcoming-events panel-class-<?php echo $panel_class; ?>">
+	        			<?php if( have_rows('events') ): ?>
+	        			<div class="container">
+	        				<h2>Upcoming Events</h2>
+	        			    <div class="row">
+	        			    <?php while( have_rows('events') ): the_row(); 
+	        			        $title = get_sub_field('title');
+	        			        $image = get_sub_field('image');
+	        			        $location = get_sub_field('location');
+	        			        $price = get_sub_field('price');
+	        			        $date = get_sub_field('date');
+	        			        $facebook_link = get_sub_field('facebook_link');
+	        			        $description = get_sub_field('description');
+	        			        ?>
+	        			        <div class="item col-md-12">
+	        			            <div class="inner">
+	        			            	<div class="image-wrapper">
+	        			            		<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
+	        			            	</div>
+	        			            	<h3><?php echo $title; ?></h3>
+	        			            	<?php if ($facebook_link){ ?>
+	        			            		<p class="facebook-link">
+	        			            			<i class="fab fa-facebook-f" aria-hidden="true"></i> 
+	        			            			<a href="<?php echo $facebook_link; ?>" target="_blank">View event on Facebook</a>
+	        			            		</p>
+	        			            	<?php } ?>
+	
+	        			            	<?php if ($date) { ?>
+	        			            		<p class="date"><i class="fas fa-clock"></i> <span><?php echo $date; ?></span></p>
+										<?php } ?>
+	        			            	
+
+	        			            	<?php if ($location) { ?>
+	        			            		<p class="location"><i class="fas fa-map-marker-alt"></i> <span><?php echo $location; ?></span></p>
+										<?php } ?>
+
+										<?php if ($price) { ?>
+	        			            		<p class="price"><i class="fas fa-ticket-alt"></i> <span><?php echo $price; ?></span></p>
+										<?php } ?>
+	        			            	
+	        			            	<div class="description">
+	        			            		<?php echo $description; ?>
+	        			            	</div>
+	        			            </div>
+	        			        </div>
+	        			    <?php endwhile; ?>
+	        			    </div>
+	        			</div>
+	        			<?php endif; ?>
+    	        	</div>
+
 	        	<?php } elseif ( get_row_layout() == 'member_story' ) { ?>
 	        		<?php 
 	        			$description = get_sub_field('description');
