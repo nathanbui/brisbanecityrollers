@@ -140,7 +140,6 @@ ul li {
 
 .site-branding {
     max-width: 137px;
-    margin-top: 10px;
     float: left;
 }
 
@@ -164,7 +163,7 @@ ul li {
 .main-navigation {
     float: left;
     margin-left: 80px;
-    margin-top: 137px;
+    margin-top: 116px;
 }
 
 .main-navigation a {

@@ -122,7 +122,7 @@ add_action( 'widgets_init', 'brisbanecityrollers_widgets_init' );
 function brisbanecityrollers_scripts() {
 	wp_enqueue_style( 'brisbanecityrollers-style-base', get_template_directory_uri() . '/css/base.css' );
 	wp_enqueue_style( 'brisbanecityrollers-style-bootstrap4-grid', get_template_directory_uri() . '/css/grid.css' );
-	wp_enqueue_style( 'brisbanecityrollers-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'brisbanecityrollers-style', get_stylesheet_uri(), array(), '111' );
 	wp_enqueue_style( 'brisbanecityrollers-google-fonts', 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|Roboto+Condensed:700,700i&display=swap', false );
 
 	wp_enqueue_script( 'brisbanecityrollers-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
