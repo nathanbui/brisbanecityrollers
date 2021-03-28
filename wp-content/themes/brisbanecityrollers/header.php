@@ -28,7 +28,7 @@
 		<div class="container clearfix">
 			<div class="site-branding">
 				<a href="<?php echo get_home_url(); ?>">
-					<img src="<?php echo get_template_directory_uri(); ?>/images/brisbane-city-rollers-logo.png" alt="brisbane city rollers logo">
+					<img src="<?php echo get_template_directory_uri(); ?>/images/brisbane-city-rollers-logo.jpg" alt="brisbane city rollers logo">
 				</a>
 			</div><!-- .site-branding -->
 
